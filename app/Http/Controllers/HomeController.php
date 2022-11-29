@@ -27,7 +27,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        $infoUser = Auth::user();
+        $infoUser = 2;
 
         return view('home', [
             'infoUser' => $infoUser
@@ -36,7 +36,7 @@ class HomeController extends Controller
 
     public function getUserInfo()
     {
-        $infoUser =  Auth::user();
+        $infoUser =  2;
 
         return response([
             'infoUser' => $infoUser

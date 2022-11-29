@@ -24,13 +24,13 @@ class CategoryRepository extends BaseRepository
     public function getListCategory()
     {
 
-         $query =  $this->model->orderBy('id', 'DESC');
+        $query =  $this->model->orderBy('id', 'DESC');
 
-         if (Auth::user()->is_admin !== 1){
-           $query->where('user-company', isset(Auth::user()->user_company) ? Auth::user()->user_company : '');
-           $query->where('status', 1);
-         }
+        //  if (Auth::user()->is_admin !== 1){
+        $query->where('user-company', isset(Auth::user()->user_company) ? Auth::user()->user_company : '');
+        $query->where('status', 1);
+        //  }
 
-         return $query->get();
+        return $query->get();
     }
 }
