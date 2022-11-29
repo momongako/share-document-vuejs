@@ -1,0 +1,11 @@
+/node_modules
+.env
+.env.bak
+.phpunit.result.cache
+.idea
+/public/storage
+/storage/*.key
+/vendor
+
+/public/css/app.css
+/public/js/app.js

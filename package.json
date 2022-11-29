@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1",
+    "bootstrap-vue": "^2.22.0",
+    "ckeditor4-vue": "^2.1.1",
+    "moment": "^2.29.4",
+    "vee-validate": "^2.2.15",
+    "vue-infinite-loading": "^2.4.5",
+    "vue-resource": "^1.5.3",
+    "vue-router": "^2.8.1",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-sweetalert2": "^5.0.5",
+    "vue-toastification": "^1.7.14",
+    "vue2-datepicker": "^3.11.0",
+    "vue2-editor": "^2.10.3",
+    "vuejs-datepicker": "^1.6.2",
+    "vuejs-loading-screen": "^1.10.2",
+    "vueperslides": "^2.15.3",
+    "vuetify": "^2.6.7",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "axios": "^0.21",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.19",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.1.14",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "vue": "^2.6.12",
+    "vue-cli-plugin-vuetify": "~2.5.1",
+    "vue-loader": "^15.10.0",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify-loader": "^1.7.0"
+  }
+}

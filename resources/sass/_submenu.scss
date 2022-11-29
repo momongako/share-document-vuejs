@@ -1,0 +1,641 @@
+#sub-menu-page {
+    margin: auto;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    .box-list-message {
+        background: #FFFFFF;
+        border-radius: 6px;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
+    .title-box-list {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #101010;
+        padding: 20px;
+    }
+    .input-search-message {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        .input-group-append {
+            padding-left: 10px;
+            .dropdown-menu {
+                padding: 0px;
+                position: relative;
+                background: #FFFFFF;
+                box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.2);
+                border-radius: 6px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+    .css-input-search {
+        background: #F3F3F3 !important;
+        border-radius: 30px !important;
+    }
+    .icon-clear-filter {
+        right: 0;
+        margin-right: 40px;
+    }
+    .icon-clear-search:hover {
+        cursor: pointer;
+    }
+    .icon-filter:hover {
+        cursor: pointer;
+    }
+    .list-message {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 500px;
+        overflow: auto;
+    }
+    @media only screen and (min-width: 1920px) {
+        .list-message {
+            height: 644px;
+        }
+    }
+    .item-message {
+        background: #F3F3F3;
+        margin-top: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .item-message:hover {
+        cursor: pointer;
+    }
+    .item-message-active {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #0085F9;
+        border-radius: 10px;
+    }
+
+    .highlight-title {
+        text-decoration: underline;
+    }
+    .content-message {
+        padding-left: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .des-new {
+            width: 250px;
+            word-wrap: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+        }
+    }
+    .right-img-message {
+        padding-right: 16px;
+    }
+    .img-message {
+        width: 120px;
+        height: 90px;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+    .title-box-message {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #101010;
+    }
+    .comment-message {
+        display: block;
+        padding-top: 12px;
+        color: #757575;
+    }
+    .name-user-message {
+        display: block;
+        padding-top: 28px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #101010;
+    }
+    .date-message {
+        display: block;
+        padding-top: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #757575;
+    }
+    .box-detail-message {
+        width: 100%;
+        flex-direction: column;
+        gap: 19px;
+        height: 1359px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        margin-left: 25px !important;
+    }
+    .scroll-message-detail {
+        overflow: auto;
+        height: calc(100vh - 104px);
+        padding-left: 32px;
+        padding-right: 32px;
+        .create-post {
+            margin-bottom: 20px;
+            margin-top: 32px;
+            .button-create-post {
+                right: 0;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 24px;
+                gap: 10px;
+                width: 137px;
+                height: 43px;
+                background: #FC3840;
+                border: 1px solid #FC3840;
+                border-radius: 36px;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+    .title-box-detail {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #101010;
+        display: block;
+        margin-top: 27px;
+    }
+    /*.css-image-detail {*/
+    /*    width: 94%;*/
+    /*    margin: auto;*/
+    /*}*/
+    .more-setting {
+        padding-top: 5px;
+        position: absolute;
+        right: 0;
+        margin-right: 32px;
+    }
+    .more-setting:hover {
+        cursor: pointer;
+    }
+    .img-message-detail {
+        margin-top: 20px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .comment-message-detail {
+        padding-top: 32px;
+        //.like-post:hover {
+        //    cursor: pointer;
+        //}
+        .card-popup {
+            position: absolute;
+            text-align: center;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background: #FFFFFF;
+            box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            padding: 10px;
+            .edit-post-category:hover {
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 14px;
+                color: #0085F9;
+            }
+            .delete-post-category:hover {
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 14px;
+                color: #0085F9;
+            }
+        }
+    }
+    .name-user-message-detail {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #101010;
+    }
+    .date-message-detail {
+        margin-top: 2px;
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #757575;
+    }
+    .list-attach-document {
+       display: inline-grid;
+    }
+    .attach-document {
+        padding-top: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #0085F9;
+    }
+    .attach-document:hover {
+        cursor: pointer;
+    }
+    .form-comment {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    .label-comment {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #101010;
+    }
+    .input-comment {
+        height: 128px !important;
+        background: #F3F3F3 !important;
+        border-radius: 10px !important;
+    }
+    .button-submit-comment {
+        right: 0;
+        width: 107px;
+        height: 43px;
+        background: #FC3840;
+        border-radius: 30px;
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+    .list-comment {
+        margin-top: 40px;
+    }
+    .item-comment {
+        padding-bottom: 20px;
+    }
+    .avatar-user-comment {
+        width: 56px;
+        height: 56px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    /*.content-comment {*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    .des-comment {
+        display: block;
+        padding: 16px 20px;
+        gap: 8px;
+        background: #F3F3F3;
+        width: fit-content;
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #101010;
+    }
+    .user-date-comment {
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #757575;
+        padding-left: 20px;
+    }
+    .date-comment {
+        padding-left: 20px;
+    }
+    // edit post
+    .box-edit-post {
+        width: 100%;
+        flex-direction: column;
+        gap: 19px;
+        height: 1359px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        margin-left: 25px !important;
+        overflow: auto;
+        height: calc(100vh - 104px);
+        .form-edit-post {
+            display: block;
+            padding: 32px 32px 0px 32px;
+            .header-edit-post {
+                display: flex;
+                padding-bottom: 20px;
+                .title-page {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #101010;
+                }
+                .button-event {
+                    right: 0;
+                    .button-submit {
+                        width: 107px;
+                        height: 43px;
+                        background: #FC3840;
+                        border-radius: 30px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                        border: none;
+                    }
+                    .button-cancel {
+                        width: 105px;
+                        height: 43px;
+                        background: #F3F3F3;
+                        border-radius: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #757575;
+                        border: none;
+                    }
+                }
+            }
+            .form-input-active, .form-input-title, .form-input-pinned, .form-input-content, .form-input-type, .form-input-summary {
+                .input-title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #101010;
+                    padding-left: 0px;
+                }
+            }
+            .form-input-title {
+                padding-top: 24px;
+                .input-title:after {
+                    content:" *";
+                    color: red;
+                }
+                .input-text-title {
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 20px;
+                    gap: 8px;
+                    width: 100%;
+                    height: 59px;
+                    background: #F3F3F3;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+            .form-input-summary {
+                padding-top: 24px;
+                .input-text-summary {
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 20px;
+                    gap: 8px;
+                    width: 100%;
+                    height: 59px;
+                    background: #F3F3F3;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+            .form-input-content {
+                padding-top: 42px;
+                .input-title:after {
+                    content:" *";
+                    color: red;
+                }
+                .input-text-content {
+                    padding: 20px;
+                    gap: 8px;
+                    width: 100%;
+                    height: 160px;
+                    background: #F3F3F3;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+            .form-input-active {
+                padding-top: 42px;
+                .input-radio {
+                    #deactive {
+                        margin-left: 40px;
+                    }
+                  .text-radio {
+                      font-style: normal;
+                      font-weight: 600;
+                      font-size: 16px;
+                      line-height: 19px;
+                      color: #101010;
+                      padding-top: 10px;
+                      padding-left: 8px;
+                  }
+                }
+            }
+            .form-input-pinned {
+                padding-top: 42px;
+                .input-radio {
+                    #notpinned {
+                        margin-left: 40px;
+                    }
+                    .text-radio {
+                        padding-top: 10px;
+                        padding-left: 8px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #101010;
+                    }
+                }
+            }
+            .form-input-type {
+                padding-top: 42px;
+                .select-type-post {
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 10px;
+                    gap: 8px;
+                    width: 312px;
+                    background: #F3F3F3;
+                    border-radius: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #101010;
+                }
+            }
+            .form-input-img-doc {
+                padding-top: 40px;
+                padding-bottom: 32px;
+                .form-input-image, .form-input-doc {
+                    width: 50%;
+                    .input-title {
+                        display: block;
+                        padding-bottom: 12px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #101010;
+                        padding-left: 0px;
+                    }
+                }
+                .form-input-image {
+                    padding-right: 32px;
+                    .select-image {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: 16px;
+                        gap: 12px;
+                        height: 142px;
+                        background: #FFFFFF;
+                        border: 1px dashed #BDBDBD;
+                        border-radius: 6px;
+                        .des-upload-image {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            color: #101010;
+                            display: inline-block;
+                            padding-top: 20px
+                        }
+                        .remove-image {
+                            align-items: center;
+                            padding: 8px 12px;
+                            gap: 8px;
+                            width: fit-content;
+                            height: 40px;
+                            background: #F3F3F3;
+                            border-radius: 38px;
+                        }
+                        .remove-image:hover {
+                            cursor: pointer;
+                        }
+                        .text-attach-img {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            text-align: center;
+                            color: #757575;
+                        }
+                    }
+                    .uploaded-image {
+                        height: 180px !important;
+                        .show-image {
+                            padding-bottom: 12px;
+                        }
+                        .remove-image {
+                           margin: auto;
+                            .text-remove {
+                                display: inline-block;
+                                padding-left: 12px;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #757575;
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                }
+                .form-input-doc {
+                    .select-file {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 24px 16px 24px 16px;
+                        gap: 12px;
+                        height: 142px;
+                        background: #FFFFFF;
+                        border: 1px dashed #BDBDBD;
+                        border-radius: 6px;
+                        .button-choose-file {
+                            padding: 12px 16px;
+                            gap: 10px;
+                            height: 38px;
+                            background: #FFFFFF;
+                            border: 1px solid #0085F9;
+                            border-radius: 36px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #0085F9;
+                        }
+                        .text-attach-doc {
+                            padding-top: 12px;
+                            display: inline-block;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            text-align: center;
+                            color: #757575;
+                        }
+                        .remove-file:hover {
+                            cursor: pointer;
+                        }
+                        .list-attach-doc {
+                            overflow: auto;
+                            .name-attach-doc {
+                                position: relative;
+                                align-items: center;
+                                word-break: break-all;
+                                padding: 8px;
+                                width: 162px;
+                                background: #F3F3F3;
+                                border-radius: 6px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 125%;
+                                display: flex;
+                                color: #FC3840;
+                                margin: auto;
+                                .text-name-file {
+                                    display: block;
+                                    width: 130px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                .icon-clear-search {
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                    .doc-attached {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
